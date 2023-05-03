@@ -1,0 +1,27 @@
+a {
+    color: #ff69b4;
+}
+
+:hover {
+    color: #000000;
+}
+
+#Flare {
+    color: #ff69b4;
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+ul > li {
+    font-style: italic;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer {
+    font-style: italic;
+}
