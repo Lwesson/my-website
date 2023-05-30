@@ -1,0 +1,132 @@
+a {
+    color: #ff69b4;
+    text-size-adjust: 110%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+:hover {
+    color: #000000;
+}
+
+header h1{
+    border: ridge 3px #000000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-left: #ffffff;
+    border-right: #ffffff;
+    text-align: center;
+}
+
+#nav_menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff !important;
+    border: 3px ridge #000000;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+#nav_menu li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+body p {
+    display: flex;
+    align-items: center;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+.column {
+    width: 100%;
+    flex: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.column img {
+    width: 49%;
+    height: auto;
+    float: left;
+    margin: .5%;
+}
+
+.clearfix::after {
+    display: table;
+    clear: none;
+}
+
+
+h1 p{
+    width: 60%;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(170, 170, 170, 0.5) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgb(170, 170, 170, .5) 100%);
+}
+
+#mamiya {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#para {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#Flare {
+    color: #000000;
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+b {
+    padding-top: 3%;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer {
+    font-style: italic;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    clear: both;
+}
+
+.slicknav_menu {
+	display:none;
+    background-color: #ffffff !important;
+}
+
+@media screen and (max-width: 500px) {
+	/* #menu is the original menu */
+#nav_menu {
+		display:none;
+	}
+	
+.slicknav_menu {
+		display:block;
+	}
+}
