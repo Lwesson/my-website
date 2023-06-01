@@ -24,7 +24,7 @@ header h1{
     list-style-type: none;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ffffff !important;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
     border-top: 3px ridge #000000;
     border-bottom: 3px ridge #000000;
     text-transform: uppercase;
@@ -34,6 +34,10 @@ header h1{
 #nav_menu li {
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+.nav_menu ul {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
 }
 
 body {
@@ -129,6 +133,7 @@ h1 p{
     color: #000000;
     font-size: 250%;
     text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
 }
 
 #Products {
@@ -164,7 +169,7 @@ footer {
 	
 .slicknav_menu {
 		display:block;
-        background-color: #ffffff !important; 
+        background:linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important; 
 }
 .slicknav_menu a {
     color: hotpink !important;
