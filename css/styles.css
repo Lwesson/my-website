@@ -25,9 +25,10 @@ header h1{
     justify-content: space-evenly;
     align-items: center;
     background-color: #ffffff !important;
-    border: 3px ridge #000000;
+    border-top: 3px ridge #000000;
+    border-bottom: 3px ridge #000000;
     text-transform: uppercase;
-    font-size: 150%;
+    padding: 1%;
 }
 
 #nav_menu li {
@@ -40,11 +41,46 @@ body {
     text-align: center;
     margin-left: 16%;
     margin-right: 16%;
+    background: linear-gradient(90deg, rgba(170, 170, 170, 0.4) 0%, rgb(255, 255, 255.9) 20%, rgba(255,255,255,.9) 80%, rgb(170, 170, 170, .4) 100%);
 }
 
 body p {
     display: flex;
     align-items: center;
+}
+
+#product1 {
+    max-width: 80%;
+    width:800px;
+}
+
+#product2 {
+    max-width: 80%;
+    width: 800px;
+}
+
+#product3 {
+    max-width: 80%;
+    width: 800px;
+}
+
+#product4 {
+    max-width: 80%;
+    width: 800px;
+}
+
+#grid_contents a {
+    width: 80%;
+    display: grid; 
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: .5em;
+    margin: 1%;   
+    grid-template-areas: 
+    "product1"
+    "product2"
+    "product3"
+    "product4";
 }
 
 .responsive {
@@ -78,24 +114,25 @@ h1 p{
     width: 60%;
 }
 
-body{
-    background: linear-gradient(90deg, rgba(170, 170, 170, 0.5) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgb(170, 170, 170, .5) 100%);
-}
-
 #mamiya {
     padding-left: 15%;
     padding-right: 15%;
 }
 
-#para {
+#worth {
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 4%;
 }
 
 #Flare {
     color: #000000;
     font-size: 250%;
     text-transform: uppercase;
+}
+
+#Products {
+    max-width: 80%;
 }
 
 b {
@@ -117,7 +154,6 @@ footer {
 
 .slicknav_menu {
 	display:none;
-    background-color: #ffffff !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -128,5 +164,14 @@ footer {
 	
 .slicknav_menu {
 		display:block;
-	}
+        background-color: #ffffff !important; 
+}
+.slicknav_menu a {
+    color: hotpink !important;
+}
+
+.slicknav_menu ul li a{
+    text-transform: uppercase !important;
+}
+
 }
