@@ -24,7 +24,6 @@ header h1{
     list-style-type: none;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
     border-top: 3px ridge #000000;
     border-bottom: 3px ridge #000000;
     text-transform: uppercase;
@@ -36,7 +35,7 @@ header h1{
     padding-bottom: 3%;
 }
 
-.nav_menu ul {
+#nav_menu ul a{
     background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
 }
 
