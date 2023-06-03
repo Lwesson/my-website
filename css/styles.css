@@ -8,8 +8,8 @@ a {
 :hover {
     color: #000000;
 }
-
-header h1{
+        /* header */
+header h1 {
     border: ridge 3px #000000;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +19,7 @@ header h1{
     text-align: center;
 }
 
+        /* nav manu */
 #nav_menu {
     display: flex;
     list-style-type: none;
@@ -35,16 +36,17 @@ header h1{
     padding-bottom: 3%;
 }
 
-#nav_menu ul a{
-    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
+#nav_menu ul a {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%) !important;
 }
 
+   /* body */
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-left: 16%;
     margin-right: 16%;
-    background: linear-gradient(90deg, rgba(170, 170, 170, 0.4) 0%, rgb(255, 255, 255.9) 20%, rgba(255,255,255,.9) 80%, rgb(170, 170, 170, .4) 100%);
+    background: linear-gradient(90deg, rgba(170, 170, 170, 0.4) 0%, rgb(255, 255, 255.9) 20%, rgba(255, 255, 255, .9) 80%, rgb(170, 170, 170, .4) 100%);
 }
 
 body p {
@@ -52,59 +54,64 @@ body p {
     align-items: center;
 }
 
+h1 p {
+    width: 60%;
+}
+
+/* product photos grid */
+
 #product1 {
-    max-width: 80%;
-    width:800px;
+    max-width: 100%;
+    width: 800px;
 }
 
 #product2 {
-    max-width: 80%;
+    max-width: 100%;
     width: 800px;
 }
 
 #product3 {
-    max-width: 80%;
+    max-width: 100%;
     width: 800px;
 }
 
 #product4 {
-    max-width: 80%;
+    max-width: 100%;
     width: 800px;
 }
 
-#grid_contents a {
-    width: 80%;
-    display: grid; 
-    grid-template-columns: 80%;
+.grid_contents {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
     grid-gap: .5em;
-    margin: 1%;   
-    grid-template-areas: 
-    "product1"
-    "product2"
-    "product3"
-    "product4";
+    margin: 1%;
+    grid-template-areas:
+        "product1"
+        "product2"
+        "product3"
+        "product4";
 }
 
 .responsive {
     width: 100%;
     max-width: 420px;
     height: auto;
-  }
+}
 
+        /* column */
 .column {
-    width: 100%;
-    flex: auto;
+    float:left;
+    width: 49%;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
+    padding: .5%;
 }
 
 .column img {
-    width: 49%;
+    width: 100%;
     height: auto;
-    float: left;
-    margin: .5%;
 }
 
 .clearfix::after {
@@ -113,13 +120,15 @@ body p {
 }
 
 
-h1 p{
-    width: 60%;
-}
 
 #mamiya {
     padding-left: 15%;
     padding-right: 15%;
+}
+
+#mamiyaphotos {
+    display:flex;
+    flex-direction: column;
 }
 
 #worth {
@@ -128,14 +137,14 @@ h1 p{
     padding-bottom: 4%;
 }
 
-#Flare {
+#flare {
     color: #000000;
     font-size: 250%;
     text-transform: uppercase;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%) !important;
 }
 
-#Products {
+#products {
     max-width: 80%;
 }
 
@@ -156,26 +165,32 @@ footer {
     clear: both;
 }
 
+
+        /* slicknav */
 .slicknav_menu {
-	display:none;
+    display: none;
 }
 
+
+        /* media query */
 @media screen and (max-width: 500px) {
-	/* #menu is the original menu */
-#nav_menu {
-		display:none;
-	}
-	
-.slicknav_menu {
-		display:block;
-        background:linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%) !important; 
-}
-.slicknav_menu a {
-    color: hotpink !important;
-}
 
-.slicknav_menu ul li a{
-    text-transform: uppercase !important;
-}
+    /* #menu is the original menu */
+    #nav_menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%) !important;
+    }
+
+    .slicknav_menu a {
+        color: hotpink !important;
+    }
+
+    .slicknav_menu ul li a {
+        text-transform: uppercase !important;
+    }
 
 }
