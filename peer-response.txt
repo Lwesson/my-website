@@ -1,0 +1,11 @@
+Peer response #1
+
+"I noticed that you are using the SlickNav plugin for your other two pages. For some reason, SlickNav does not display anything when clicked."
+
+I believe I was using the wrong selectors in CSS to fix this. There have been a lot of small errors involved with the Slicknav menu and it functioning correctly.
+
+Peer response #2
+
+“I noticed that your navbar in the homepage ends up colliding a bit before one of your media queries kicks in.”
+
+While fixing the Slicknav menu for the previous critique I also found that the padding and flexbox settings need adjustment for the nav_menu to not collide. 

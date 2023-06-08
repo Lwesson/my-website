@@ -63,6 +63,22 @@ h1 p {
     width: 60%;
 }
 
+/* table on hos.html */
+#hos_table {
+    max-width: 75%;
+    margin-bottom: 1.5em;
+}
+
+td, th {
+    text-align: center;
+    padding: .2em .3em;
+    margin: 0em .1em;
+}
+
+td {
+    width: 26%;
+}
+
 /* product photos grid */
 
 #product1 {
