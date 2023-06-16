@@ -25,8 +25,11 @@ header h1 {
     float: right;
 }
 
-.para {
-    font-size: large;
+#flare {
+    color: #000000;
+    font-size: 250%;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%) !important;
 }
 
 /* nav manu */
@@ -62,6 +65,21 @@ body {
 body p {
     display: flex;
     align-items: center;
+}
+
+.para {
+    font-size: large;
+}
+
+#list {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
 }
 
 /* table on hos.html */
@@ -148,7 +166,7 @@ td {
     clear: none;
 }
 
-
+/* Mamiya page */
 
 #mamiya {
     list-style: disc;
@@ -159,34 +177,6 @@ td {
 #mamiyaphotos {
     display: flex;
     flex-direction: row;
-}
-
-#worth {
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 4%;
-}
-
-#flare {
-    color: #000000;
-    font-size: 250%;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%) !important;
-}
-
-b {
-    padding-top: 3%;
-}
-
-#list {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
-
-ul {
-    list-style: none;
-    font-style: italic;
 }
 
 footer {
