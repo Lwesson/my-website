@@ -60,10 +60,6 @@ body p {
     align-items: center;
 }
 
-h1 p {
-    width: 60%;
-}
-
 /* table on hos.html */
 #hos_table {
     max-width: 75%;
@@ -200,21 +196,39 @@ footer {
 @media screen and (max-width: 500px) {
 
     /* #menu is the original menu */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #icon {
+        order: 0;
+    }
+
+    #flare {
+    text-align: center;
+    font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (768 - 320)));
+    }
+      
     #nav_menu {
         display: none;
     }
 
     .slicknav_menu {
-        display: block;
+        display: inline-block;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, 0) 70%) !important;
+        
     }
 
     .slicknav_menu a {
         color: hotpink !important;
+        display: inline-block;
+        justify-content: center !important;
     }
 
     .slicknav_menu ul li a {
         text-transform: uppercase !important;
+        display: inline-block;
     }
 
 }
