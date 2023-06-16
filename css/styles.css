@@ -73,13 +73,15 @@ body p {
 
 #list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-weight: bold;
+    text-align: center;
 }
 
 ul {
     list-style: none;
     font-style: italic;
+    padding: 0 1em;
 }
 
 /* table on hos.html */
